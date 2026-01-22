@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kamaneeyam - Fine Dining Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <div class="logo">KAMANEEYAM</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <ul id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>KAMANEEYAM</h1>
+        <p>Experience the Art of Fine Dining</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<section id="features" class="features">
+    <h2>Why Choose Us</h2>
+    <div class="features-grid">
+        <div class="feature-card">👨‍🍳 Expert Chefs</div>
+        <div class="feature-card">🌿 Fresh Ingredients</div>
+        <div class="feature-card">⭐ Premium Quality</div>
+        <div class="feature-card">🍷 Fine Dining</div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        Kamaneeyam is a premium fine-dining restaurant serving authentic
+        South Indian cuisine with elegance and tradition.
+    </p>
+</section>
+
+<section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-categories">
+        <button class="category-btn active" onclick="filterMenu('all')">All</button>
+        <button class="category-btn" onclick="filterMenu('main')">Main</button>
+        <button class="category-btn" onclick="filterMenu('dessert')">Dessert</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+        <img src="https://images.unsplash.com/photo-1668236543090-82b4c5c87a6b">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button class="btn">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Kamaneeyam Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
